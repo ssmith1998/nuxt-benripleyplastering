@@ -1,0 +1,13 @@
+{
+  "name": "ben-web-new",
+  "version": "1.0.0",
+  "description": "Plastering Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "strapi:dev": "cd strapi && npm run develop",
+    "nuxt:start": "cd frontend && npm run dev"
+  },
+  "author": "Sean Smith",
+  "license": "ISC"
+}
