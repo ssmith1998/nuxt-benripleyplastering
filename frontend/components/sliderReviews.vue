@@ -1,5 +1,5 @@
 <template>
-   <VueSlickCarousel class="h-full" :arrows="false" :dots="true" :autoplay="true" :slidesToShow="2">
+   <VueSlickCarousel class="h-full" v-bind="settings">
       <div v-for="(item,index) in data" :key="index" class="sliderItem h-full w-full p-4">
         <img :src="item.attributes.review_image.data.attributes.url" alt="" class="h-full">
       </div>
@@ -17,6 +17,26 @@
   
   
 export default {
+  data() {
+    return {
+      settings: {
+    arrows:false,
+    dots:true, 
+    autoplay:true,
+    slidesToShow:2,
+ responsive: [
+{
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1,
+        "initialSlide": 1
+      }
+    },
+ ]
+      }
+    }
+  },
 props: ['data'],
   components:{VueSlickCarousel},
   methods: {

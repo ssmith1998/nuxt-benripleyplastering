@@ -108,7 +108,9 @@ export default {
 }
 
 .location__inner{
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+    @media only screen and (min-width:768px) {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+    }
 }
 </style>
