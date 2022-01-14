@@ -1,5 +1,5 @@
 <template>
-<div class="wrapper pt-28">
+<div class="wrapper pt-24 md:pt-28">
   <section ref="home" id="home">
    <slider v-if="sliderImages.length > 0" :data="sliderImages"/>
   </section>
@@ -15,7 +15,7 @@
   <section ref="location" id="location" class="p-10">
     <h2 class="text-3xl font-bold">Location</h2>
     <div class="location__inner">
-    <div class="map justify-center p-10">
+    <div class="map justify-center p-2 md:p-10">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75394.15842114008!2d-1.6057718756315602!3d53.806083470819466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793e4ada64bd99%3A0x51adbafd0213dca9!2sLeeds!5e0!3m2!1sen!2suk!4v1641843354054!5m2!1sen!2suk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="info flex items-center justify-center">
@@ -28,7 +28,7 @@
     </div>
     </div>
   </section>
-  <section ref="reviews" id="reviews" class="p-10">
+  <section ref="reviews" id="reviews" class="p-2 md:p-10">
   <h2 class="text-3xl font-bold">Reviews</h2>
 <sliderReviews v-if="reviews.length > 0" :data="reviews" class="mt-10" />
   </section>
